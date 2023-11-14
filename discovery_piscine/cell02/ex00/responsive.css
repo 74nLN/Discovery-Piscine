@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+    height: 100vh;
+    table-layout: fixed;
+    border-collapse: collapse;
+    
+}
+table, th, td {
+    border: 3px solid black;
+}   
+
+th, td {
+    height: 150px;
+    font-size: 24px;
+}
+    
+.box1 {
+    background-color: lightblue;
+}
+.box2 {
+    background-color: #e74c3c;
+    
+}

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Inconsolata', monospace;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+html {
+    font-size:  62.5%;
+    overflow-x: hidden;
+}
+
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+/* .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+} */
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.content{
+    width: 100%;
+    /* font-size: 20px; */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+b {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+button{
+    font-size: 18px;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid var(--main-color);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn{
+    color: #fff;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+/* button:hover{
+    border: none;
+} */
+
+/* hr {
+    padding: 20px;
+    margin: 50px;
+    border: 1px solid #323946;
+} */
+
+/* h3 {
+    position: relative;
+    top: 220px;
+    width: 60vh ;
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    font-family: monospace;
+    padding: 20px 40px 20px;
+    border: 2px solid red;
+    border-radius: 25px;
+    display: grid;
+    place-content: end center;
+    margin: 10px auto;
+} */
+
+h3{
+    font-size: 18px;
+    text-align: center;
+    /* Box model */
+    /* background-color: var(--main-color); */
+    width: max-content; 
+    height: max-content;
+    padding: 30px;
+    border: 0px solid var(--second-bg-color);
+    border-radius: 25px;
+    /* position  */
+    position: fixed;
+    bottom: 0%;
+    margin: auto;
+    width: 100%;
+} 

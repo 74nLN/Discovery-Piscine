@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Background Color</title>
+    <link rel="stylesheet" href="backgroound.css" />
+  </head>
+  <body>
+    <button id="btn">Click me!</button>
+
+    <script>
+      const getColor = () => {
+        // hex code
+        const randomNumber = Math.floor(Math.random() * 16777215);
+        const randomCode = "#" + randomNumber.toString(16);
+        document.body.style.backgroundColor = randomCode;
+      }
+
+      document.getElementById("btn").addEventListener("click", getColor);
+
+    </script>
+  </body>
+</html>

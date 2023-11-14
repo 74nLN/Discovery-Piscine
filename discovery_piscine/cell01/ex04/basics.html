@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .header h1 {
+            color: white;
+            font-size: 36px;
+        }
+        .content {
+            text-align: center;
+        }
+        .shop {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .shop img {
+            height: 200px;
+        }
+
+        .shop a {
+            display: block;
+        }
+        hr {
+            border: 1px solid black;
+        }
+        .footer {
+            text-align: right;
+            font-style: italic;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Basics Online shop !</h1>
+    </div>
+    <div class="content">
+        <div class="shop">
+            <img src="https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepage/26c9324913c021677768c36975d635ef.png" alt="Online Shop 1">
+            <p>
+                <a href="https://shopee.co.th/" target="_blank"> Visit Shoppe</a>
+            </p>
+        </div>
+        <div class="shop">
+            <img src="data:image/png;base64,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" alt="Online Shop 2">
+            <p>
+                <a href="https://www.lazada.co.th/" target="_blank"> Visit Lazada </a>
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="footer">
+        &copy; twatpool 2023
+    </div>
+</body>
+</html>
